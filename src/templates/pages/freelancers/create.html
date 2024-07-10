@@ -1,0 +1,135 @@
+<div class="freelancer-edit">
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Add freelancers</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/freelancers">Freelancers</a></li>
+                        <li class="breadcrumb-item active">Add freelancer</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+
+            <div class="card card-primary">
+                <div class="card-header">
+                    <h3 class="card-title">Add freelancer</h3>
+                </div>
+
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="nameInput" class="col-form-label">Name</label>
+                        </div>
+                        <div class="col-sm-9">
+<!--                            <input type="text" class="form-control is-invalid" id="nameInput" placeholder="Enter name">-->
+                            <input type="text" class="form-control"  id="nameInput" placeholder="Enter name">
+                            <span id="nameInput-error" class="error invalid-feedback">Please provide name</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="lastNameInput" class="col-form-label">Lastname</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="lastNameInput" placeholder="Enter lastname">
+                            <span id="lastNameInput-error" class="error invalid-feedback">Please provide lastname</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="emailInput" class="col-form-label">Email</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="emailInput" placeholder="Enter email">
+                            <span id="emailInput-error" class="error invalid-feedback">Please provide email</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="nameInput" class="col-form-label">Education</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="educationInput" placeholder="Enter education">
+                            <span id="educationInput-error" class="error invalid-feedback">Please provide education</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="locationInput" class="col-form-label">Location</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="locationInput" placeholder="Enter location">
+                            <span id="locationInput-error" class="error invalid-feedback">Please provide location</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="skillsInput" class="col-form-label">Skills</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea  class="form-control" id="skillsInput" placeholder="Enter skills"></textarea>
+                            <span id="skillsInput-error" class="error invalid-feedback">Please provide skills</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="infoInput" class="col-form-label">Info</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="infoInput" placeholder="Enter info">
+                            <span id="infoInput-error" class="error invalid-feedback">Please provide info</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="levelSelect" class="col-form-label">Level</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <select type="text" class="form-control" id="levelSelect">
+                                <option value="junior" selected>Junior</option>>
+                                <option value="middle">Middle</option>>
+                                <option value="senior">Senior</option>>
+                            </select>
+                            <span id="levelInput-error" class="error invalid-feedback">Please provide level</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="avatarInput" class="col-form-label">New avatar</label>
+                        </div>
+                        <div class="col-sm-9">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="avatarInput">
+                                    <label class="custom-file-label" for="avatarInput">Choose file</label>
+                                </div>
+<!--                            <span id="levelInput-error" class="error invalid-feedback">Please provide level</span>-->
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-sm-3 col-sm-9">
+                            <button type="button" class="btn btn-danger" id="saveButton" >Save</button>
+
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+            </div>
+
+        </div><!-- /.container-fluid -->
+    </section>
+</div>

@@ -1,0 +1,90 @@
+<!--
+login
+<a href="/">DASHBOARD</a>
+<a href="/404">404</a>
+<a href="/login">login</a>
+<a href="/sign-up">sign-up</a>
+-->
+<div class="login-box">
+    <div class="login-logo">
+        <a href="javascript:void(0);">Freelance Studio</a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="card">
+        <div class="card-body login-card-body">
+            <p class="login-box-msg">Register a new / (Регистрация)</p>
+            <form action="../../index3.html" method="post">
+                <div id="command-error" class="error invalid-feedback text-center mb-3">Error of signup</div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Name" id="name">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                    <span id="name-error" class="error invalid-feedback">Please enter name</span>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Lastname" id="last-name">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                    <span id="last-name-error" class="error invalid-feedback">Please enter lastname</span>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Email" id="email">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                    <span id="email-error" class="error invalid-feedback">Please enter a email address</span>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Password" id="password">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                    <span id="password-error" class="error invalid-feedback">Please enter password</span>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Retype password" id="password-repeat">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                    <span id="password-repeat-error" class="error invalid-feedback">Passwords do not match</span>
+                </div>
+                <div class="row mb-1">
+                    <div class="col-12">
+                        <div class="icheck-primary">
+                            <input type="checkbox" id="agree">
+                            <label for="agree">
+                                I agree to the <a href="javascript:void(0);">terms</a>
+                            </label>
+                            <span id="agree-error" class="error invalid-feedback">Please agree to the terms and conditions</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary btn-block" id="process-button">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="social-auth-links text-center mb-3">
+        <p>- OR -</p>
+        <a href="/login" class="btn btn-block btn-warning">
+            Sign up (Login)
+        </a>
+
+    </div>
+</div>

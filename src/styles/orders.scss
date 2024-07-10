@@ -1,0 +1,29 @@
+.orders{
+
+  .orders-tools{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+  }
+}
+.order{
+  .box-profile{
+    .level{
+      font-size: 32px;
+    }
+  }
+}
+.order-edit{
+
+  .box-profile{
+    .level{
+      font-size: 32px;
+    }
+  }
+}
+.order-form{
+  .bootstrap-datetimepicker-widget .picker-switch a{
+    color: white;
+  }
+}

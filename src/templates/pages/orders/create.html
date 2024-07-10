@@ -1,0 +1,148 @@
+<script src="../../../../webpack.config.js"></script>
+<div class="order-create order-form">
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Add new order</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/orders">Orders</a></li>
+                        <li class="breadcrumb-item active">Add order</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+
+            <div class="card card-primary">
+                <div class="card-header">
+                    <h3 class="card-title">Add new order</h3>
+                </div>
+
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="amountInput" class="col-form-label">Amount</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <!--                            <input type="text" class="form-control is-invalid" id="nameInput" placeholder="Enter name">-->
+                            <input type="number" class="form-control" id="amountInput" placeholder="Enter amount">
+                            <span id="amountInput-error" class="error invalid-feedback">Please provide amount</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="descriptionInput" class="col-form-label">Description</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" id="descriptionInput"
+                                      placeholder="Enter description"></textarea>
+                            <span id="descriptionInput-error"
+                                  class="error invalid-feedback">Please provide description</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="statusSelect" class="col-form-label">Status</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <select type="text" class="form-control" id="statusSelect">
+                                <option value="new" selected>New</option>
+                                >
+                                <option value="confirmed">Confirmed</option>
+                                >
+                                <option value="success">Success</option>
+                                >
+                                <option value="canceled">Canceled</option>
+                                >
+                            </select>
+                            <span id="statusInput-error" class="error invalid-feedback">Please provide status</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="freelancerSelect" class="col-form-label">Freelancer</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <select type="text" class="form-control" id="freelancerSelect">
+
+                            </select>
+                            <span id="freelancerInput-error"
+                                  class="error invalid-feedback">Please provide freelancer</span>
+                        </div>
+                    </div>
+
+                    <!-- /.card-body -->
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card bg-gradient-info" id="scheduled-card" >
+                            <div class="card-header border-0">
+                                <h3 class="card-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Scheduled implementation date
+                                </h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body pt-0">
+                                <!--The calendar -->
+                                <div id="calendar-scheduled" style="width: 100%"></div>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <span id="scheduled-card-error" class="error text-center invalid-feedback">Please choose date</span>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card bg-gradient-success" id="complete-card">
+                            <div class="card-header border-0">
+                                <h3 class="card-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Date of performance (optional)
+                                </h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body pt-0">
+                                <!--The calendar -->
+                                <div id="calendar-completed" style="width: 100%"></div>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+<!--                        <span id="complete-card-error" class="error text-center invalid-feedback">Please choose date</span>-->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card bg-gradient-warning" id="deadline-card">
+                            <div class="card-header border-0">
+                                <h3 class="card-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Deadline date
+                                </h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body pt-0">
+                                <!--The calendar -->
+                                <div id="calendar-deadline" style="width: 100%"></div>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <span id="deadline-card-error" class="error text-center invalid-feedback">Please choose date</span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="w-100 text-center">
+                        <button type="button" class="btn btn-danger" id="saveButton">Save</button>
+
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+</div>

@@ -1,0 +1,70 @@
+<!--
+login
+<a href="/">DASHBOARD</a>
+<a href="/404">404</a>
+<a href="/login">login</a>
+<a href="/sign-up">sign-up</a>
+-->
+<div class="login-box">
+    <div class="login-logo">
+        <a href="javascript:void(0);">Freelance Studio</a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="card">
+        <div class="card-body login-card-body">
+            <p class="login-box-msg">Sign in to start your session / (Вход на платформу)</p>
+            <form action="../../index3.html" method="post">
+                <div id="command-error" class="error invalid-feedback text-center mb-3">Error login or password</div>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Email" id="email">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                    <span id="email-error" class="error invalid-feedback">Please enter a email address</span>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Password" id="password">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                    <span id="password-error" class="error invalid-feedback">Please enter password</span>
+                </div>
+                <div class="row mb-1">
+                    <div class="col-12">
+                        <div class="icheck-primary">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">
+                                Remember Me
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary btn-block" id="process-button">Sign In</button>
+                    </div>
+                </div>
+                <!-- /.col -->
+
+                <!-- /.col -->
+            </form>
+
+
+            <!-- /.social-auth-links -->
+
+
+        </div>
+        <!-- /.login-card-body -->
+    </div>
+    <div class="social-auth-links text-center mb-3">
+        <p>- OR -</p>
+        <a href="/sign-up" class="btn btn-block btn-warning">
+           Sign in
+        </a>
+
+    </div>
+</div>

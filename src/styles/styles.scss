@@ -1,0 +1,23 @@
+@import "freelancers";
+@import "orders";
+body{
+
+}
+.sidebar{
+  .image{
+    i.fa{
+      color: white;
+      font-size: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+  }
+}
+.fc-daygrid-event {
+  white-space: normal;
+}
+.fc-daygrid-block-event .fc-event-time, .fc-daygrid-block-event .fc-event-title {
+  padding: 3px;
+}
