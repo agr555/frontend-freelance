@@ -43,6 +43,7 @@ module.exports = {
                 { from: "./node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css", to: "css" },
                 { from: "./node_modules/admin-lte/plugins/fontawesome-free/webfonts", to: "webfonts" },
                 { from: "./node_modules/admin-lte/dist/css/adminlte.min.css", to: "css" },
+                // { from: "./node_modules/admin-lte/dist/js/demo.js", to: "js" },
                 { from: "./node_modules/admin-lte/dist/js/adminlte.min.js", to: "js" },
                 { from: "./node_modules/admin-lte/plugins/jquery/jquery.min.js", to: "js" },
                 { from: "./node_modules/admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css", to: "css" },
@@ -67,6 +68,9 @@ module.exports = {
                 { from: "./node_modules/admin-lte/plugins/fullcalendar/main.js", to: "js/fullcalendar.js" },
                 { from: "./node_modules/admin-lte/plugins/fullcalendar/locales/ru.js", to: "js/fullcalendar-locale-ru.js" },
                 { from: "./node_modules/admin-lte/plugins/fullcalendar/locales/sk.js", to: "js/fullcalendar-locale-sk.js" },
+                { from: "./node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js", to: "js/bootstrap.bundle.min.js" },
+                { from: "./node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js.map", to: "js/bootstrap.bundle.min.js.map" },
+                // { from: "./node_modules/admin-lte/dist/js/demo.js", to: "js/demo.js" },
                 { from: "./.env", to: "./" }
             ],
         }),

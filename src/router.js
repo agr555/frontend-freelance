@@ -36,7 +36,8 @@ export class Router { // экспортируем
                 styles: ['fullcalendar.css'],
                 scripts: ['moment.min.js', 'moment-sk-locale.js',
                     'fullcalendar.js',
-                    'fullcalendar-locale-sk.js']
+                    'fullcalendar-locale-sk.js', //'demo.js',
+                    'bootstrap.bundle.min.js']
             },
             {
                 route: '/freelancers',
@@ -49,7 +50,8 @@ export class Router { // экспортируем
 
                 },
                 styles: ['dataTables.bootstrap4.min.css', 'responsive.bootstrap4.min.css'],
-                scripts: ['jquery.dataTables.min.js', 'dataTables.bootstrap4.min.js', 'dataTables.responsive.min.js', 'responsive.bootstrap4.min.js']
+                scripts: ['jquery.dataTables.min.js', 'dataTables.bootstrap4.min.js', 'dataTables.responsive.min.js', 
+                    'responsive.bootstrap4.min.js', 'bootstrap.bundle.min.js']
             },
             {
                 route: '/freelancers/view',
@@ -98,7 +100,9 @@ export class Router { // экспортируем
                     new OrdersList(this.openNewRoute.bind(this));//!!важно не потерять контекст
                 },
                 styles: ['dataTables.bootstrap4.min.css', 'responsive.bootstrap4.min.css'],
-                scripts: ['jquery.dataTables.min.js', 'dataTables.bootstrap4.min.js', 'dataTables.responsive.min.js', 'responsive.bootstrap4.min.js']
+                scripts: ['jquery.dataTables.min.js', 'dataTables.bootstrap4.min.js', 'dataTables.responsive.min.js', 
+                    // 'responsive.bootstrap4.min.js'
+                ]
             },
             {
                 route: '/orders/view',
@@ -319,6 +323,8 @@ export class Router { // экспортируем
             }
             if (newRoute.load && typeof newRoute.load === 'function') {
                 newRoute.load();
+                document.body.classList.remove('sidebar-open');
+                    document.body.classList.add('sidebar-collapse');
             }
         } else {
             console.log('No route found');
@@ -340,5 +346,11 @@ export class Router { // экспортируем
 
         })
     }
+    // $(document).ready(function () {
+    //     $('.nav-item').click(function () {
+    //       $('.sidebar-mini').removeClass('sidebar-open');
+    //       $('.sidebar-mini').addClass('sidebar-closed sidebar-collapse');
+    //     });
+    //   });
 
 }

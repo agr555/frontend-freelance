@@ -12,7 +12,7 @@ export class OrdersServices {
         if (result.redirect || result.error || !result.response || (result.response && (result.response.error || !result.response.orders))) {
             returnObject.error = 'Error get list of orders';
             if (result.redirect) {
-                returnObject.redirect(result.redirect);
+                returnObject.redirect = result.redirect;
             }
             return returnObject;
         }
@@ -31,7 +31,7 @@ export class OrdersServices {
         if (result.redirect || result.error || !result.response || (result.response && result.response.error)) {
             returnObject.error = 'Error get freelancer';
             if (result.redirect) {
-                returnObject.redirect(result.redirect);
+                returnObject.redirect = result.redirect;
             }
             return returnObject;
         }
@@ -50,7 +50,7 @@ export class OrdersServices {
         if (result.redirect || result.error || !result.response || (result.response && result.response.error )) {
             returnObject.error = 'Order add error!';
             if (result.redirect) {
-                returnObject.redirect(result.redirect);
+                returnObject.redirect = result.redirect;
             }
             return returnObject;
         }
@@ -68,7 +68,7 @@ export class OrdersServices {
         if (result.redirect || result.error || !result.response || (result.response && result.response.error )) {
             returnObject.error = 'Order deletion error!';
             if (result.redirect) {
-                returnObject.redirect(result.redirect);
+                returnObject.redirect = result.redirect;
             }
             return returnObject;
         }
@@ -85,7 +85,7 @@ export class OrdersServices {
         if (result.redirect || result.error || !result.response || (result.response && result.response.error )) {
             returnObject.error = 'Order update error!';
             if (result.redirect) {
-                returnObject.redirect(result.redirect);
+                returnObject.redirect = result.redirect;
             }
             return returnObject;
         }
